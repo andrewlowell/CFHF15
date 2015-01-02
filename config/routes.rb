@@ -1,4 +1,25 @@
 Rails.application.routes.draw do
+  
+  get 'registrants/new'
+
+  root 'static_pages#home'
+
+  get 'exhibits' => 'static_pages#exhibits'
+
+  get 'contact_us' => 'static_pages#contact_us'
+
+  get 'faqs' => 'static_pages#faqs'
+
+  get 'research_help' => 'static_pages#research_help'
+
+  get 'schedule' => 'static_pages#schedule'
+
+  get 'speakers' => 'static_pages#speakers'
+  
+  get 'register' => 'registrants#new'
+  
+  resources :registrants
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
