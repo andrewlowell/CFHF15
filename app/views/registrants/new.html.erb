@@ -1,0 +1,23 @@
+<%= form_for(@registrant) do |f| %>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <%= f.label :full_name %>
+      <%= f.text_field :full_name %>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="large-12 columns">
+      <%= f.label :email_address %>
+      <%= f.text_field :email_address %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <%= f.submit "Submit", class: "button round large-12 columns" %>
+    </div>
+  </div>
+  
+<% end %>
