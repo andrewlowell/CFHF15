@@ -7,8 +7,9 @@ class RegistrantsController < ApplicationController
   def create
     @registrant = Registrant.new(registrant_params)
     if @registrant.save
-      flash[:success] = "Registration successful! We'll send you an email when individual classes open up for registration."
+      flash[:success] = "Registration successful! We'll send a confirmation email shortly."
       redirect_to root_path
+      RegistrantMailer.registration_email(@registrant).deliver_now
     else
       render 'new'
     end
