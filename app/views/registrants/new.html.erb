@@ -16,8 +16,70 @@
 
   <div class="row">
     <div class="large-12 columns">
+      <span>9:00 - 11:30&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+      <%= radio_button_tag(:time_slot_1, "Jerry's Wonderful Family History Class") %>
+      <%= label_tag(:time_slot_1_choice_1, "Jerry's Wonderful Family History Class") %>
+      <%= radio_button_tag(:time_slot_1, "Tina's Boring But Useful Family History Class") %>
+      <%= label_tag(:time_slot_1_choice_2, "Tina's Boring But Useful Family History Class") %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <span>9:00 - 11:30&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+      <%= radio_button_tag(:time_slot_2, "Joe's Wonderful Family History Class") %>
+      <%= label_tag(:time_slot_2_choice_1, "Joe's Wonderful Family History Class") %>
+      <%= radio_button_tag(:time_slot_2, "Terry's Boring But Useful Family History Class") %>
+      <%= label_tag(:time_slot_2_choice_2, "Terry's Boring But Useful Family History Class") %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <span>9:00 - 10:30&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+      <%= radio_button_tag(:time_slot_3, "Mary Kate's Wonderful Family History Class") %>
+      <%= label_tag(:time_slot_3_choice_1, "Mary Kate's Wonderful Family History Class") %>
+      <%= radio_button_tag(:time_slot_3, "Tommy's Boring But Useful Family History Class") %>
+      <%= label_tag(:time_slot_3_choice_2, "Tommy's Boring But Useful Family History Class") %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <span>11:00 - 12:30&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+      <%= radio_button_tag(:time_slot_4, "Emma's Wonderful Family History Class") %>
+      <%= label_tag(:time_slot_4_choice_1, "Emma's Wonderful Family History Class") %>
+      <%= radio_button_tag(:time_slot_4, "Benedict's Boring But Useful Family History Class") %>
+      <%= label_tag(:time_slot_4_choice_2, "Benedict's Boring But Useful Family History Class") %>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="large-12 columns">
+      <span>1:00 - 2:30&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+      <%= radio_button_tag(:time_slot_5, "Celeste's Wonderful Family History Class") %>
+      <%= label_tag(:time_slot_5_choice_1, "celeste's Wonderful Family History Class") %>
+      <%= radio_button_tag(:time_slot_5, "Kandace's Boring But Useful Family History Class") %>
+      <%= label_tag(:time_slot_5_choice_2, "Kandace's Boring But Useful Family History Class") %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <span>3:00 - 4:30&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+      <%= radio_button_tag(:time_slot_6, "Dwayne's Wonderful Family History Class") %>
+      <%= label_tag(:time_slot_6_choice_1, "Dwayne's Wonderful Family History Class") %>
+      <%= radio_button_tag(:time_slot_6, "Jordan's Boring But Useful Family History Class") %>
+      <%= label_tag(:time_slot_6_choice_2, "Jordan's Boring But Useful Family History Class") %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
       <%= f.submit "Submit", class: "button round large-12 columns" %>
     </div>
   </div>
+  
+
   
 <% end %>

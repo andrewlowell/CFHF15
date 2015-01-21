@@ -11,13 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150102010051) do
+ActiveRecord::Schema.define(version: 20150121192456) do
 
   create_table "registrants", force: :cascade do |t|
     t.string   "full_name"
     t.string   "email_address"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "time_slot_1"
+    t.string   "time_slot_2"
+    t.string   "time_slot_3"
+    t.string   "time_slot_4"
+    t.string   "time_slot_5"
+    t.string   "time_slot_6"
   end
 
   add_index "registrants", ["email_address"], name: "index_registrants_on_email_address", unique: true
