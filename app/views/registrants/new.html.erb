@@ -16,7 +16,7 @@
 
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
-      <%= label_tag("9:45 - 10:45") %>
+      <%= label_tag("9:45am - 10:45am") %>
       <%= f.select(:time_slot_1) do %>
         <% [['10 Ways to Jumpstart Your Genealogy - Thomas McEntee', 1], ['From Tree to Temple: Preparing Family Names for the Temple', 2], ["What's New at FamilySearch", 3]].each do |c| -%>
           <%= content_tag(:option, c.first, value: c.last) %>
@@ -27,8 +27,9 @@
 
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
+      <%= label_tag("11:00am - 12:00pm") %>
       <%= f.select(:time_slot_2) do %>
-        <% [['Lisbon', 1], ['Madrid', 2], ['Catholics', 3]].  each do |c| -%>
+        <% [['Genealogy Do-Over: A Year of Learning from Mistakes', 1], ['Janis Forte, African-American Genealogy Research', 2], ['Finding Missing People in Your Family Tree', 3], ['Getting Started in Genetic Genealogy', 4], ['Intro to RootsMagic - Julie Busse', 5]].each do |c| -%>
           <%= content_tag(:option, c.first, value: c.last) %>
         <% end %>
       <% end %>
@@ -37,8 +38,9 @@
 
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
+      <%= label_tag("1:15pm - 2:15pm") %>
       <%= f.select(:time_slot_3) do %>
-        <% [['Lisbon', 1], ['Madrid', 2], ['Catholics', 3]].each do |c| -%>
+        <% [['Genealogy: The Future is Now', 1], ['Polish Genealogy Research Using Online Sources - Justyna', 2], ['Branching Out: Useful Tools to Help You Find More Names for Your Family Tree', 3], ['FamilySearch Family Tree Now and in the Future', 4], ['Intro to FamilySearch - Amanda Jensen', 5]].each do |c| -%>
           <%= content_tag(:option, c.first, value: c.last) %>
         <% end %>
       <% end %>
@@ -47,14 +49,15 @@
 
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
+      <%= label_tag("2:30pm - 3:30pm") %>
       <%= f.select(:time_slot_4) do %>
-        <% [['Lisbon', 1], ['Madrid', 2], ['Catholics', 3]].each do |c| -%>
+        <% [["After You've Gone: Future Proofing Your Genealogy Research", 1], ['Tips for Using Online Census Records - Donna Roginski', 2], ['something', 3], ['something', 4], ['Temple Submission Process - Amanda Jensen', 5]].each do |c| -%>
           <%= content_tag(:option, c.first, value: c.last) %>
         <% end %>
       <% end %>
     </div>
   </div>
-
+<!--
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
       <%= f.select(:time_slot_5) do %>
@@ -64,17 +67,7 @@
       <% end %>
     </div>
   </div>
-
-  <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <%= f.select(:time_slot_6) do %>
-        <% [['Lisbon', 1], ['Madrid', 2], ['Catholics', 3]].each do |c| -%>
-          <%= content_tag(:option, c.first, value: c.last) %>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
-
+-->
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
       <%= f.submit "Submit", class: "button round large-12 columns" %>
