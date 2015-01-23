@@ -18,7 +18,7 @@ class RegistrantsController < ApplicationController
     private
   
       def registrant_params
-        params.require(:registrant).permit(:full_name, :email_address)
+        params.require(:registrant).permit(:full_name, :email_address, :time_slot_1, :time_slot_2, :time_slot_3, :time_slot_4, :time_slot_5)
       end
 
 end

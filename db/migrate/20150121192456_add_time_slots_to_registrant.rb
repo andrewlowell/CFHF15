@@ -1,10 +1,9 @@
 class AddTimeSlotsToRegistrant < ActiveRecord::Migration
   def change
-    add_column :registrants, :time_slot_1, :string
-    add_column :registrants, :time_slot_2, :string
-    add_column :registrants, :time_slot_3, :string
-    add_column :registrants, :time_slot_4, :string
-    add_column :registrants, :time_slot_5, :string
-    add_column :registrants, :time_slot_6, :string
+    add_column :registrants, :time_slot_1, :integer
+    add_column :registrants, :time_slot_2, :integer
+    add_column :registrants, :time_slot_3, :integer
+    add_column :registrants, :time_slot_4, :integer
+    add_column :registrants, :time_slot_5, :integer
   end
 end

@@ -16,7 +16,7 @@
 
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
-      <%= label_tag("9:45am - 10:45am") %>
+      <%= label_tag("9:45 - 10:45") %>
       <%= f.select(:time_slot_1) do %>
         <% [['10 Ways to Jumpstart Your Genealogy - Thomas McEntee', 1], ['From Tree to Temple: Preparing Family Names for the Temple', 2], ["What's New at FamilySearch", 3]].each do |c| -%>
           <%= content_tag(:option, c.first, value: c.last) %>
