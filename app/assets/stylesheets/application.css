@@ -17,13 +17,8 @@
  */
 
  .row {
-  margin-top: 15px;
-  padding-top: 20px;
-  background-color: #ecf0f1;
- }
-
- body {
-  background-color: #ecf0f1;
+  padding-top: 25px;
+  padding-bottom: 25px;
  }
  
 label {
@@ -51,6 +46,25 @@ label {
 	padding-top: 0px;
 }
 
-#colorify {
-	background-color: purple;
+.footer {
+	width: 100%;
+	background-color: #b61e12;
+	color: white;
+	padding: 10px 12px 2px 12px;
+}
+
+.footer h5 {
+	color: white;
+}
+
+.main {
+	background-color: #ffffcc;
+}
+
+.three {
+	background-color: white;
+}
+
+.full-width-container {
+	width: 100%;
 }
