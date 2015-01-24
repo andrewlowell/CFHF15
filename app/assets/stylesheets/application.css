@@ -29,3 +29,19 @@
 label {
   cursor: default;
 }
+
+.smaller-text {
+	font-size: 0.8rem;
+	line-height: 1.1rem;
+}
+
+.image-centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.text-centered {
+	text-align: center;
+}
