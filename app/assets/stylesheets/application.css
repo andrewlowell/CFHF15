@@ -45,3 +45,12 @@ label {
 .text-centered {
 	text-align: center;
 }
+
+#top-text {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#colorify {
+	background-color: purple;
+}
