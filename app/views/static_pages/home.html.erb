@@ -5,8 +5,8 @@
   </div>
 <% end %>
 
-<div class="full-width-container main">
-<div class="row">
+<div class="full-width-container cream">
+<div class="row extended-vertical-padding">
     <div class="small-6 large-6 columns"><%= image_tag "home_page.jpg" %></div>
     <div class="small-6 large-6 columns">
       <h3 id="top-text">Jumpstart Your Genealogy</h3>
@@ -16,7 +16,7 @@
 
       <p class="smaller-text">Are you just getting started with genealogy research or are you looking to get back on track? Sign up to attend the 2015 Chicago Family History Fair! We're offereing a full day of helpful classes designed to help you make progress towards your genealogy goals.</p>
 
-      <p class="smaller-text">Our keynote speaker is <a href="http://hidefgen.com/about/thomas-macentee/">Thomas McEntee</a>, founder of GeneaBloggers.com and a genealogy educator of renown. Thomas will present four of his most popular and engaging workshops:</p>
+      <p class="smaller-text">Our keynote speaker is <a href="http://hidefgen.com/about/thomas-macentee/">Thomas McEntee</a>, founder of <a href="www.geneabloggers.com">GeneaBloggers.com</a> and a genealogy educator of renown. Thomas will present four of his most popular and engaging workshops:</p>
 
       <ul>  
         <ul class="no-bullet">
@@ -27,7 +27,7 @@
         </ul>
       </ul>
 
-      <p class="smaller-text">We'll also have additional <a>local speakers</a>, computer lab classes, recorded video presentations from RootsTech 2015, fun family history activities for children, plus one-on-one help from experienced researchers.</p>
+      <p class="smaller-text">We'll also have additional <%= link_to "local speakers", speakers_path %>, computer lab classes, recorded video presentations from RootsTech 2015, fun family history activities for children, plus one-on-one help from experienced researchers.</p>
 
       <%= link_to "Register Now (It's Free!)", register_path, class: "button round small-12 large-12 medium-12 columns" %>
 
@@ -36,7 +36,7 @@
 </div>
 
 <div class="full-width-container three">
-<div class="row">
+<div class="row extended-vertical-padding">
   <div class="small-4 medium-4 large-4 columns">
     <%= image_tag "workshops.jpg", class: "image-centered" %>
     <h4 class="text-centered">Workshops</h4>

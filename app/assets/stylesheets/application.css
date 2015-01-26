@@ -16,7 +16,7 @@
 
  */
 
- .row {
+ .extended-vertical-padding {
   padding-top: 25px;
   padding-bottom: 25px;
  }
@@ -57,7 +57,7 @@ label {
 	color: white;
 }
 
-.main {
+.cream {
 	background-color: #ffffcc;
 }
 
@@ -67,4 +67,18 @@ label {
 
 .full-width-container {
 	width: 100%;
+}
+
+body {
+	background-color: #ffffcc;
+}
+
+.temporary-box {
+	margin-top: 20px;
+	border: 2px solid black;
+	min-height: 600px;
+}
+
+.speaker-blurb {
+  margin-bottom: 20px;
 }

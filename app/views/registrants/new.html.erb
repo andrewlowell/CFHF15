@@ -1,77 +1,104 @@
 <%= form_for(@registrant) do |f| %>
 
-  <div class="row">
+  <div class="row extended-vertical-padding">
     <div class="large-12 medium-12 small-12 columns">
-      <%= f.label :full_name %>
-      <%= f.text_field :full_name %>
+    <h2>Register and Select Presentations/Workshops</h2>
     </div>
   </div>
-  
   <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <%= f.label :email_address %>
-      <%= f.text_field :email_address %>
-    </div>
-  </div>
+    <div class="large-6 medium-6 columns">
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= f.label :full_name %>
+          <%= f.text_field :full_name %>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= f.label :email_address %>
+          <%= f.text_field :email_address %>
+        </div>
+      </div>
 
-  <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <%= label_tag("9:45 - 10:45") %>
-      <%= f.select(:time_slot_1) do %>
-        <% [['10 Ways to Jumpstart Your Genealogy - Thomas McEntee', 1], ['From Tree to Temple: Preparing Family Names for the Temple', 2], ["What's New at FamilySearch", 3]].each do |c| -%>
-          <%= content_tag(:option, c.first, value: c.last) %>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= label_tag("Welcome Session: 8:30am - 9:30am") %>
+          <%= f.select(:time_slot_1) do %>
+            <% [['RootsTech Keynote Presentations', 1], ['10 Ways to Jumpstart Your Genealogy - Thomas McEntee', 2], ['From Tree to Temple: Preparing Family Names for the Temple', 3], ["What's New at FamilySearch", 4]].each do |c| -%>
+              <%= content_tag(:option, c.first, value: c.last) %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
 
-  <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <%= label_tag("11:00am - 12:00pm") %>
-      <%= f.select(:time_slot_2) do %>
-        <% [['Genealogy Do-Over: A Year of Learning from Mistakes', 1], ['Janis Forte, African-American Genealogy Research', 2], ['Finding Missing People in Your Family Tree', 3], ['Getting Started in Genetic Genealogy', 4], ['Intro to RootsMagic - Julie Busse', 5]].each do |c| -%>
-          <%= content_tag(:option, c.first, value: c.last) %>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= label_tag("First Session: 9:45am - 10:45am") %>
+          <%= f.select(:time_slot_1) do %>
+            <% [['Choose a Presentation/Workshop', 1], ['10 Ways to Jumpstart Your Genealogy - Thomas McEntee', 2], ['From Tree to Temple: Preparing Family Names for the Temple', 3], ["What's New at FamilySearch", 4]].each do |c| -%>
+              <%= content_tag(:option, c.first, value: c.last) %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
 
-  <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <%= label_tag("1:15pm - 2:15pm") %>
-      <%= f.select(:time_slot_3) do %>
-        <% [['Genealogy: The Future is Now', 1], ['Polish Genealogy Research Using Online Sources - Justyna', 2], ['Branching Out: Useful Tools to Help You Find More Names for Your Family Tree', 3], ['FamilySearch Family Tree Now and in the Future', 4], ['Intro to FamilySearch - Amanda Jensen', 5]].each do |c| -%>
-          <%= content_tag(:option, c.first, value: c.last) %>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= label_tag("Second Session: 11:00am - 6:00pm") %>
+          <%= f.select(:time_slot_2) do %>
+            <% [['Choose a Presentation/Workshop', 1], ['Genealogy Do-Over: A Year of Learning from Mistakes', 2], ['Janis Forte, African-American Genealogy Research', 3], ['Finding Missing People in Your Family Tree', 4], ['Getting Started in Genetic Genealogy', 5], ['Intro to RootsMagic - Julie Busse', 6]].each do |c| -%>
+              <%= content_tag(:option, c.first, value: c.last) %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
 
-  <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <%= label_tag("2:30pm - 3:30pm") %>
-      <%= f.select(:time_slot_4) do %>
-        <% [["After You've Gone: Future Proofing Your Genealogy Research", 1], ['Tips for Using Online Census Records - Donna Roginski', 2], ['something', 3], ['something', 4], ['Temple Submission Process - Amanda Jensen', 5]].each do |c| -%>
-          <%= content_tag(:option, c.first, value: c.last) %>
-        <% end %>
-      <% end %>
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= label_tag("Third Session: 1:15pm - 2:15pm") %>
+          <%= f.select(:time_slot_3) do %>
+            <% [['Choose a Presentation/Workshop', 1], ['Genealogy: The Future is Now', 2], ['Polish Genealogy Research Using Online Sources - Justyna', 3], ['Branching Out: Useful Tools to Help You Find More Names for Your Family Tree', 4], ['FamilySearch Family Tree Now and in the Future', 5], ['Intro to FamilySearch - Amanda Jensen', 6]].each do |c| -%>
+              <%= content_tag(:option, c.first, value: c.last) %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= label_tag("Fourth Session: 2:30pm - 3:30pm") %>
+          <%= f.select(:time_slot_4) do %>
+            <% [['Choose a Presentation/Workshop', 1], ["After You've Gone: Future Proofing Your Genealogy Research", 2], ['Tips for Using Online Census Records - Donna Roginski', 3], ['something', 4], ['something', 5], ['Temple Submission Process - Amanda Jensen', 6]].each do |c| -%>
+              <%= content_tag(:option, c.first, value: c.last) %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= label_tag("Fifth Session: 3:45pm - 4:45pm") %>
+          <%= f.select(:time_slot_5) do %>
+            <% [['Choose a Presentation/Workshop', 1], ['Madrid', 2], ['Catholics', 3]].each do |c| -%>
+              <%= content_tag(:option, c.first, value: c.last) %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="row extended-vertical-padding">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= f.submit "Register and Reserve Class Selections", class: "button round" %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 medium-6 small-6 columns">
+      <div class="temporary-box">
+        
+      </div>
+      </div>
     </div>
   </div>
-<!--
-  <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <%= f.select(:time_slot_5) do %>
-        <% [['Lisbon', 1], ['Madrid', 2], ['Catholics', 3]].each do |c| -%>
-          <%= content_tag(:option, c.first, value: c.last) %>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
--->
-  <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <%= f.submit "Submit", class: "button round large-12 columns" %>
-    </div>
-  </div>
-  
 <% end %>
