@@ -16,14 +16,34 @@
 
  */
 
- .extended-vertical-padding {
-  padding-top: 25px;
-  padding-bottom: 25px;
- }
+ 
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -6.5em;
+}
+    
+.footer, .push {
+  height: 6.5em;
+} 
  
 label {
   cursor: default;
 }
+
+ .extended-vertical-padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+ }
 
 .smaller-text {
 	font-size: 0.8rem;
@@ -50,7 +70,7 @@ label {
 	width: 100%;
 	background-color: #b61e12;
 	color: white;
-	padding: 10px 12px 2px 12px;
+	padding: 12px 12px 0px 12px;
 }
 
 .footer h5 {
@@ -82,3 +102,4 @@ body {
 .speaker-blurb {
   margin-bottom: 20px;
 }
+
