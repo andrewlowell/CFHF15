@@ -1,3 +1,20 @@
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name"><h1><%= link_to "Chicago Family History Fair", root_path %></h1></li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li><%= link_to "Register", register_path %></li>
+      <li class="active"><%= link_to "Speakers", speakers_path %></li>
+      <li><%= link_to "Schedule", schedule_path %></li>
+      <li><%= link_to "Exhibits", exhibits_path %></li>
+      <li><%= link_to "Research Help", research_help_path %></li>
+      <li><%= link_to "FAQs", faqs_path %></li>
+      <li><%= link_to "Contact Us", contact_us_path %></li>
+    </ul>
+  </section>
+</nav>
+
 <div class="row extended-vertical-padding">
   <div class="small-12 large-12 columns">
     <h2>Speakers and Presenters</h2>
@@ -6,7 +23,7 @@
 
 <div class="row speaker-blurb">
   <div class="large-3 medium-3 small-3 columns">
-    <%= image_tag "thomas_macentee.jpg" %>
+    <a name="thomas_macentee"><%= image_tag "thomas_macentee.jpg" %></a>
   </div>
   <div class="large-9 medium-9 small-9 columns">
     <h4>Thomas MacEntee</h4>
@@ -16,7 +33,7 @@
 
 <div class="row speaker-blurb">
   <div class="large-3 medium-3 small-3 columns">
-    <%= image_tag "janis_forte.jpg" %>
+    <a name="janis_forte"><%= image_tag "janis_forte.jpg" %></a>
   </div>
   <div class="large-9 medium-9 small-9 columns">
     <h4>Janis Forte</h4>
@@ -26,7 +43,7 @@
 
 <div class="row speaker-blurb">
   <div class="large-3 medium-3 small-3 columns">
-    <%= image_tag "korra.jpg" %>
+    <a name="amanda_jensen"><%= image_tag "amanda_jensen.jpg" %></a>
   </div>
   <div class="large-9 medium-9 small-9 columns">
     <h4>Amanda Jensen</h4>
@@ -36,7 +53,7 @@
 
 <div class="row speaker-blurb">
   <div class="large-3 medium-3 small-3 columns">
-    <%= image_tag "korra.jpg" %>
+    <a name="donna_roginski"><%= image_tag "donna_roginski.jpg" %></a>
   </div>
   <div class="large-9 medium-9 small-9 columns">
     <h4>Donna Roginski</h4>
@@ -46,7 +63,7 @@
 
 <div class="row speaker-blurb">
   <div class="large-3 medium-3 small-3 columns">
-    <%= image_tag "korra.jpg" %>
+    <a name="justyna_cwynar"><%= image_tag "justyna_cwynar.jpg" %></a>
   </div>
   <div class="large-9 medium-9 small-9 columns">
     <h4>Justyna Cwynar</h4>
@@ -56,7 +73,7 @@
 
 <div class="row speaker-blurb">
   <div class="large-3 medium-3 small-3 columns">
-    <%= image_tag "korra.jpg" %>
+    <a name="julie_busse"><%= image_tag "julie_busse.jpg" %></a>
   </div>
   <div class="large-9 medium-9 small-9 columns">
     <h4>Julie Busse</h4>
@@ -66,7 +83,7 @@
 
 <div class="row speaker-blurb">
   <div class="large-3 medium-3 small-3 columns">
-    <%= image_tag "korra.jpg" %>
+    <a name="jeremy_foote"><%= image_tag "jeremy_foote.jpg" %></a>
   </div>
   <div class="large-9 medium-9 small-9 columns">
     <h4>Jeremy Foote</h4>
