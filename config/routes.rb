@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   
   get 'register' => 'registrants#new'
   
+  get 'edit/:edit_code' => 'registrants#edit'
+  
   resources :registrants
 
   # The priority is based upon order of creation: first created -> highest priority.

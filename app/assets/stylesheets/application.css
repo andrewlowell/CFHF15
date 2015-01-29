@@ -25,6 +25,10 @@ html, body {
   height: 100%;
 }
 
+.little_space {
+  margin-top: 10px;
+}
+
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -70,15 +74,14 @@ label {
 	width: 100%;
 	background-color: #b61e12;
 	color: white;
-	padding: 12px 12px 0px 12px;
 }
 
 .footer h5 {
 	color: white;
 }
 
-.cream {
-	background-color: #ffffcc;
+footer.row {
+  padding: 12px 12px 0px 12px;
 }
 
 .three {
@@ -90,7 +93,7 @@ label {
 }
 
 body {
-	background-color: #ffffcc;
+  background-color: #d3d3d3;
 }
 
 .temporary-box {

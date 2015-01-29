@@ -3,12 +3,14 @@
     <li class="name"><h1><%= link_to "Chicago Family History Fair", root_path %></h1></li>
   </ul>
   <section class="top-bar-section">
+    <ul class="left">
+      <li><%= link_to "Register", register_path, class: "alert button" %></li>
+    </ul>
     <ul class="right">
-      <li><%= link_to "Register", register_path %></li>
       <li><%= link_to "Speakers", speakers_path %></li>
       <li><%= link_to "Schedule", schedule_path %></li>
       <li><%= link_to "Exhibits", exhibits_path %></li>
-      <li class="active"><%= link_to "Research Help", research_help_path, class: "active" %></li>
+      <li class="active"><%= link_to "Research Help", research_help_path %></li>
       <li><%= link_to "FAQs", faqs_path %></li>
       <li><%= link_to "Contact Us", contact_us_path %></li>
     </ul>
