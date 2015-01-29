@@ -19,4 +19,8 @@ class StaticPagesController < ApplicationController
 
   def speakers
   end
+  
+  def admin
+    @registrants = Registrant.all
+  end
 end

@@ -18,11 +18,11 @@ ActiveRecord::Schema.define(version: 20150129180811) do
     t.string   "email_address"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
-    t.integer  "time_slot_1"
-    t.integer  "time_slot_2"
-    t.integer  "time_slot_3"
-    t.integer  "time_slot_4"
-    t.integer  "time_slot_5"
+    t.string   "time_slot_1"
+    t.string   "time_slot_2"
+    t.string   "time_slot_3"
+    t.string   "time_slot_4"
+    t.string   "time_slot_5"
     t.string   "edit_code"
   end
 

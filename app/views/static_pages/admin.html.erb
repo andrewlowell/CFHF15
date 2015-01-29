@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="large-12 medium-12 columns"
+    <h4>Number of Registrants:  <%= @registrants.length %></h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 medium-12 columns"
+    <ul class="no-bullet">
+      <% CLASSES[0].each do |x| %>
+        <li class="no-bullet"><%= x[0] %>: <%= @registrants.where({ time_slot_1: x[0]}).length %> registrants</li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 medium-12 columns"
+    <ul class="no-bullet">
+      <% CLASSES[1].each do |x| %>
+        <li><%= x[0] %>: <%= @registrants.where({ time_slot_1: x[0]}).length %> registrants</li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 medium-12 columns"
+    <ul class="no-bullet">
+      <% CLASSES[2].each do |x| %>
+        <li><%= x[0] %>: <%= @registrants.where({ time_slot_1: x[0]}).length %> registrants</li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 medium-12 columns"
+    <ul class="no-bullet">
+      <% CLASSES[3].each do |x| %>
+        <li><%= x[0] %>: <%= @registrants.where({ time_slot_1: x[0]}).length %> registrants</li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 medium-12 columns"
+    <ul class="no-bullet">
+      <% CLASSES[4].each do |x| %>
+        <li><%= x[0] %>:  <%= @registrants.where({ time_slot_1: x[0]}).length %> registrants</li>
+      <% end %>
+    </ul>
+  </div>
+</div>

@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   
   get 'edit/:edit_code' => 'registrants#edit'
   
+  get 'admin' => 'static_pages#admin', as: :admin
+  
   resources :registrants
 
   # The priority is based upon order of creation: first created -> highest priority.

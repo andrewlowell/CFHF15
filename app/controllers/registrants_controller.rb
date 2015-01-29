@@ -2,7 +2,6 @@ class RegistrantsController < ApplicationController
   
   def new
     @registrant = Registrant.new
-    @classes_left = 20 - Registrant.where(time_slot_1: 2).count
   end
 
   def edit
@@ -25,8 +24,8 @@ class RegistrantsController < ApplicationController
     if @registrant.save
       flash[:success] = "Registration successful! We'll send a confirmation email shortly."
       redirect_to root_path
-      RegistrantMailer.registration_email(@registrant).deliver_now
-      RegistrantMailer.registration_notification(@registrant).deliver_now
+      #RegistrantMailer.registration_email(@registrant).deliver_now
+      #RegistrantMailer.registration_notification(@registrant).deliver_now
     else
       render 'new'
     end
