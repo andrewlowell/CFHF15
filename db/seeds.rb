@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-  CLASSES = [
+=begin  CLASSES = [
               [
                ["10 Ways to Jumpstart Your Genealogy (Thomas McEntee - Chapel)", "10 Ways to Jumpstart Your Genealogy (<a href=\"/speakers#thomas_macentee\">Thomas MacEntee</a> - Chapel)"],
                ["Find Names & Strengthen Family with the My Family Booklet (Video - Room 1)"],
@@ -45,9 +45,10 @@
             ]
 
 registrants = [
-  [ "joe", "joe@joe.joe", CLASSES[0][0], CLASSES[1][0]]
+  [ "joe", "joe@joe.joe", CLASSES[0][0][0], CLASSES[1][0][0], CLASSES[2][0][0], ]
 ]
 
 registrants.each do |x,y,z,a,b|
   
 end
+=end

@@ -20,12 +20,12 @@ class RegistrantsController < ApplicationController
  
   def create
     @registrant = Registrant.new(registrant_params)
-    @registrant.edit_code = ('a'..'z').to_a.shuffle[0..7].join
+    @registrant.edit_code = ('a'..'z').to_a.shuffle[0..9].join
     if @registrant.save
       flash[:success] = "Registration successful! We'll send a confirmation email shortly."
       redirect_to root_path
-      #RegistrantMailer.registration_email(@registrant).deliver_now
-      #RegistrantMailer.registration_notification(@registrant).deliver_now
+      RegistrantMailer.registration_email(@registrant).deliver_now
+      RegistrantMailer.registration_notification(@registrant).deliver_now
     else
       render 'new'
     end
