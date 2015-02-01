@@ -4,7 +4,7 @@
   </ul>
   <section class="top-bar-section">
     <ul class="left">
-      <li><%= link_to "Register", register_path, class: "alert button" %></li>
+      <li><%= link_to "Register", new_registrant_path, class: "alert button" %></li>
     </ul>
     <ul class="right">
       <li><%= link_to "Speakers", speakers_path %></li>
@@ -47,7 +47,7 @@
 
       <p class="smaller-text">We'll also have additional <%= link_to "local speakers", speakers_path %>, computer lab classes, recorded video presentations from RootsTech 2015, fun family history activities for children, plus one-on-one help from experienced researchers.</p>
 
-      <%= link_to "Register Now (It's Free!)", register_path, class: "button round small-12 large-12 medium-12 columns" %>
+      <%= link_to "Register Now (It's Free!)", new_registrant_path, class: "button round small-12 large-12 medium-12 columns" %>
 
     </div>
 </div>

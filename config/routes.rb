@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  
-  get 'registrants/new'
 
   root 'static_pages#home'
 
@@ -16,13 +14,13 @@ Rails.application.routes.draw do
 
   get 'speakers' => 'static_pages#speakers'
   
-  get 'register' => 'registrants#new'
+#  get 'register', to: 'registrants#new', as: :register
   
   get 'edit/:edit_code' => 'registrants#edit'
   
   get 'admin' => 'static_pages#admin', as: :admin
   
-  resources :registrants
+  resources 'registrants'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

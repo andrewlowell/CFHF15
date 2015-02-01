@@ -27,6 +27,7 @@ class RegistrantsController < ApplicationController
       RegistrantMailer.registration_email(@registrant).deliver_now
       RegistrantMailer.registration_notification(@registrant).deliver_now
     else
+      flash[:error] = "Please enter a valid email address."
       render 'new'
     end
   end
