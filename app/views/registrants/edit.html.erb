@@ -26,7 +26,11 @@
           <%= label_tag("First Session: 9:45am - 10:45am") %>
           <%= f.select(:time_slot_1) do %>
             <% CLASSES[0].each do |c| -%>
-              <%= content_tag(:option, c.first, value: c.first) %>
+              <% if c.first == @registrant.time_slot_1 %>
+                <%= content_tag(:option, c.first, value: c.first, selected: "") %>
+              <% else %>
+                <%= content_tag(:option, c.first, value: c.first) %>
+              <% end %>
             <% end %>
           <% end %>
         </div>
@@ -37,7 +41,11 @@
           <%= label_tag("Second Session: 11:00am - 6:00pm") %>
           <%= f.select(:time_slot_2) do %>
             <% CLASSES[1].each do |c| -%>
-              <%= content_tag(:option, c.first, value: c.first) %>
+              <% if c.first == @registrant.time_slot_2 %>
+                <%= content_tag(:option, c.first, value: c.first, selected: "") %>
+              <% else %>
+                <%= content_tag(:option, c.first, value: c.first) %>
+              <% end %>
             <% end %>
           <% end %>
         </div>
@@ -48,7 +56,11 @@
           <%= label_tag("Third Session: 1:15pm - 2:15pm") %>
           <%= f.select(:time_slot_3) do %>
             <% CLASSES[2].each do |c| -%>
-              <%= content_tag(:option, c.first, value: c.first) %>
+              <% if c.first == @registrant.time_slot_3 %>
+                <%= content_tag(:option, c.first, value: c.first, selected: "") %>
+              <% else %>
+                <%= content_tag(:option, c.first, value: c.first) %>
+              <% end %>
             <% end %>
           <% end %>
         </div>
@@ -59,7 +71,11 @@
           <%= label_tag("Fourth Session: 2:30pm - 3:30pm") %>
           <%= f.select(:time_slot_4) do %>
             <% CLASSES[3].each do |c| -%>
-              <%= content_tag(:option, c.first, value: c.first) %>
+              <% if c.first == @registrant.time_slot_4 %>
+                <%= content_tag(:option, c.first, value: c.first, selected: "") %>
+              <% else %>
+                <%= content_tag(:option, c.first, value: c.first) %>
+              <% end %>
             <% end %>
           <% end %>
         </div>
@@ -70,7 +86,11 @@
           <%= label_tag("Fifth Session: 3:45pm - 4:45pm") %>
           <%= f.select(:time_slot_5) do %>
             <% CLASSES[4].each do |c| -%>
-              <%= content_tag(:option, c.first, value: c.first) %>
+              <% if c.first == @registrant.time_slot_5 %>
+                <%= content_tag(:option, c.first, value: c.first, selected: "") %>
+              <% else %>
+                <%= content_tag(:option, c.first, value: c.first) %>
+              <% end %>
             <% end %>
           <% end %>
         </div>
