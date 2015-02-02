@@ -23,9 +23,9 @@ class RegistrantsController < ApplicationController
     @registrant.edit_code = ('a'..'z').to_a.shuffle[0..9].join
     if @registrant.save
       flash[:success] = "Registration successful! We'll send a confirmation email shortly."
-      redirect_to root_path
       RegistrantMailer.registration_email(@registrant).deliver_now
-      RegistrantMailer.registration_notification(@registrant).deliver_now
+      RegistrantMailer.registration_notification(@registrant).deliver_now      
+      redirect_to root_path
     else
       flash[:error] = "Please enter a valid email address."
       render 'new'
