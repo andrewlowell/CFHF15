@@ -24,33 +24,30 @@
   </div>
 <% end %>
 
-<div class="full-width-container cream">
-<div class="row extended-vertical-padding">
-    <div class="small-6 large-6 columns"><%= image_tag "home_page.jpg" %></div>
-    <div class="small-6 large-6 columns">
-      <h3 id="top-text">Jumpstart Your Genealogy</h3>
-      <h5>Chicago Family History Fair 2015</h5>
-      <p>Saturday, March 21st, 2015 — 8 am to 5 pm<br>2727 Lake Avenue, Wilmette, Illinois</p>
+<div class="full-width-container">
+  <div class="row extended-vertical-padding" id="full-background-pic">
+    <div class="large-6 large-offset-6 medium-6 medium-offset-6 columns" id="opaqued">
+      <h3 class="white" id="top-text">Jumpstart Your Genealogy</h3>
+      <h5 class="white">Chicago Family History Fair 2015</h5>
+      <p class="white">Saturday, March 21st, 2015 — 8 am to 5 pm<br>2727 Lake Avenue, Wilmette, Illinois</p>
 
-      <p class="smaller-text">Are you just getting started with genealogy research or are you looking to get back on track? Sign up to attend the 2015 Chicago Family History Fair! We're offereing a full day of helpful classes designed to help you make progress towards your genealogy goals.</p>
+      <p class="smaller-text white">Are you just getting started with genealogy research or are you looking to get back on track? Sign up to attend the 2015 Chicago Family History Fair! We're offereing a full day of helpful classes designed to help you make progress towards your genealogy goals.</p>
 
-      <p class="smaller-text">Our keynote speaker is <a href="http://hidefgen.com/about/thomas-macentee/">Thomas McEntee</a>, founder of <a href="http://www.geneabloggers.com">GeneaBloggers.com</a> and a genealogy educator of renown. Thomas will present four of his most popular and engaging workshops:</p>
+      <p class="smaller-text white">Our keynote speaker is <a href="http://hidefgen.com/about/thomas-macentee/">Thomas McEntee</a>, founder of <a href="http://www.geneabloggers.com">GeneaBloggers.com</a> and a genealogy educator of renown. Thomas will present four of his most popular and engaging workshops:</p>
 
-      <ul>  
-        <ul class="no-bullet">
-          <li class="smaller-text">10 Ways to Jumpstart Your Genealogy</li>
-          <li class="smaller-text">Building a Research Toolbox</li>
-          <li class="smaller-text">You Use WHAT for Genealogy? Wonderful Uses for Unusual Tools</li>
-          <li class="smaller-text">7 Habits of Highly Frugal Genealogists</li>
-        </ul>
+      <ul class="square">  
+        <li class="smaller-text white">10 Ways to Jumpstart Your Genealogy</li>
+        <li class="smaller-text white">Building a Research Toolbox</li>
+        <li class="smaller-text white">You Use WHAT for Genealogy? Wonderful Uses for Unusual Tools</li>
+        <li class="smaller-text white">7 Habits of Highly Frugal Genealogists</li>
       </ul>
 
-      <p class="smaller-text">We'll also have additional <%= link_to "local speakers", speakers_path %>, computer lab classes, recorded video presentations from RootsTech 2015, fun family history activities for children, plus one-on-one help from experienced researchers.</p>
+      <p class="smaller-text white">We'll also have additional <%= link_to "local speakers", speakers_path %>, computer lab classes, recorded video presentations from RootsTech 2015, fun family history activities for children, plus one-on-one help from experienced researchers.</p>
 
-      <%= link_to "Register Now (It's Free!)", new_registrant_path, class: "button round small-12 large-12 medium-12 columns" %>
+      <%= link_to "Register Now (It's Free!)", new_registrant_path, class: "button round alert small-12 large-12 medium-12 columns" %>
 
     </div>
-</div>
+  </div>
 </div>
 
 <div class="full-width-container three">

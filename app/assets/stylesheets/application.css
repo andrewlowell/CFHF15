@@ -39,10 +39,27 @@ html, body {
 .footer, .push {
   height: 6.5em;
 } 
- 
+
+#opaqued {
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);
+}
+
+.alert {
+  background-color: #e60000;
+}
+
+.white {
+  color: white;
+}
+
 label {
   cursor: default;
 }
+
+ .extended-vertical-margin {
+  margin-top: 25px;
+  margin-bottom: 25px;
+ }
 
  .extended-vertical-padding {
   padding-top: 25px;
@@ -92,10 +109,6 @@ footer.row {
 	width: 100%;
 }
 
-body {
-  background-color: #d3d3d3;
-}
-
 .temporary-box {
 	margin-top: 20px;
 	border: 2px solid black;
@@ -104,4 +117,16 @@ body {
 
 .speaker-blurb {
   margin-bottom: 20px;
+}
+
+iframe {
+  margin-bottom: 20px;
+}
+
+#full-background-pic {
+  background-image: url("librarian_test.jpg");
+}
+
+.cream {
+ background-color: #FFEBCD; 
 }
