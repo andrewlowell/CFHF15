@@ -96,9 +96,16 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <%= label_tag("How many children do you plan to bring with you?") %>
+          <%= f.select :children, (0..10) %>
+        </div>
+      </div>
+
       <div class="row extended-vertical-padding">
         <div class="large-12 medium-12 small-12 columns">
-          <%= f.submit "Register and Reserve Class Selections", class: "button round" %>
+          <%= f.submit "Edit Class Selections", class: "button round" %>
         </div>
       </div>
     </div>

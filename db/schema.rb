@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150129180811) do
+ActiveRecord::Schema.define(version: 20150203203130) do
 
   create_table "registrants", force: :cascade do |t|
     t.string   "full_name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150129180811) do
     t.string   "time_slot_4"
     t.string   "time_slot_5"
     t.string   "edit_code"
+    t.integer  "children"
   end
 
   add_index "registrants", ["email_address"], name: "index_registrants_on_email_address", unique: true

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'pdf/download_pdf'
+
   root 'static_pages#home'
 
   get 'exhibits' => 'static_pages#exhibits'
@@ -13,8 +15,6 @@ Rails.application.routes.draw do
   get 'schedule' => 'static_pages#schedule'
 
   get 'speakers' => 'static_pages#speakers'
-  
-#  get 'register', to: 'registrants#new', as: :register
   
   get 'edit/:edit_code' => 'registrants#edit'
   
