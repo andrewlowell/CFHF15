@@ -1,7 +1,7 @@
   CLASSES = [
               [
                ["Ten Ways to Jumpstart Your Genealogy (Thomas McEntee - Chapel)", "10 Ways to Jumpstart Your Genealogy (<a href=\"/speakers#thomas_macentee\">Thomas MacEntee</a> - Chapel)"],
-               ["Introduction to FamilySearch, Spanish (Bruce Jensen - Family History Center)", "Introduction to FamilySearch, Spanish (<a href=\"/speakers#bruce_susan\">Bruce Jensen</a> - Family History Center)"],
+               ["Introduction to FamilySearch (Español - Bruce Anderson - Family History Center)", "Introduction to FamilySearch (Español - <a href=\"/speakers#bruce_susan\">Bruce Jensen</a> - Family History Center)"],
                ["Find Names & Strengthen Family with the My Family Booklet (Video - Room 1)"],
                ["Getting the Most Out of Ancestry.com (Video - Room 3)"],
                ["1-on-1 Research Help (Room 4)"],
@@ -20,7 +20,7 @@
               [
                 ["Genealogy: Do-Over: A Year of Learning from Mistakes (Thomas MacEntee - Chapel)"],
                 ["Online Resources for Polish Research (Justyna Cwynar - Relief Society Room)", "Online Resources for Polish Research (<a href=\"/speakers#justyna_cwynar\">Justyna Cwynar</a> - Relief Society Room)"],
-                ["Introduction to RootsMagic (Julie Busse - Family History Center)", "Introduction to RootsMagic (<a href=\"/speakers#julie_busse\">Julie Busse</a> - Family History Center)"],
+                ["Getting Started with RootsMagic Genealogy Software (Julie Busse - Family History Center)", "Getting Started with RootsMagic Genealogy Software (<a href=\"/speakers#julie_busse\">Julie Busse</a> - Family History Center)"],
                 ["From Tree to Temple: Preparing Family Names for the Temple (Video - Room 1)"],
                 ["Getting Started in Genetic Genealogy (Video - Room 3)"],
                 ["1-on-1 Research Help (Room 4)"],
@@ -30,7 +30,7 @@
               [
                 ["You Use WHAT for Genealogy? Wonderful Uses for Unusual Tools (Thomas McEntee - Chapel)"],
                 ["Online Census Tips and Secrets (Donna Roginski - Relief Society Room)", "Online Census Tips and Secrets (<a href=\"/speakers#donna_roginski\">Donna Roginski</a> - Relief Society Room)"],
-                ["The Power of Online Genealogy Collaboration (Jeremy Foote - Family History Center)", "The Power of Online Genealogy Collaboration (<a href=\"/speakers#jeremy_foote\">Jeremy Foote</a> - Family History Center)"],
+                ["RootsMagic Part 2 (Julie Busse - Family History Center)", "RootsMagic Part 2 (<a href=\"/speakers#julie_busse\">Julie Busse</a> - Family History Center)"],
                 ["FamilySearch & Beyond: New Resources for Members (Video - Room 1)"],
                 ["FamilySearch Indexing: It's a Whole New World! (Video - Room 3)"],
                 ["1-on-1 Research Help (Room 4)"]
