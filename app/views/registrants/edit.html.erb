@@ -101,7 +101,11 @@
           <%= label_tag("How many children do you plan to bring with you?") %>
           <%= f.select(:children) do %>
             <% (0..10).each do |c| -%>
-              <%= content_tag(:option, c, value: c) %>
+              <% if c == @registrant.children %>
+                <%= content_tag(:option, c, value: c, selected: "") %>
+              <% else %>
+                <%= content_tag(:option, c, value: c) %>
+              <% end %>
             <% end %>
           <% end %>
         </div>
