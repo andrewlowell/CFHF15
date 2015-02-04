@@ -6,6 +6,6 @@ class RegistrantMailer < ApplicationMailer
   end
   def registration_notification(registrant)
     @registrant = registrant
-    mail(to: "mynock101@gmail.com", subject: "CFHF-2015 New Registration")
+    mail(to: ["mynock101@gmail.com", "dean@genlighten.com"], subject: "CFHF-2015 New Registration")
   end
 end
