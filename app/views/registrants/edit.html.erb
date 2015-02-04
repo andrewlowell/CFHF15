@@ -99,7 +99,11 @@
       <div class="row">
         <div class="large-12 medium-12 small-12 columns">
           <%= label_tag("How many children do you plan to bring with you?") %>
-          <%= f.select :children, (0..10) %>
+          <%= f.select(:children) do %>
+            <% (0..10).each do |c| -%>
+              <%= content_tag(:option, c, value: c) %>
+            <% end %>
+          <% end %>
         </div>
       </div>
 
