@@ -49,12 +49,14 @@
   <div class="small-12 large-12 columns">
     <h4>9:45am - 10:45am</h4>
     <ul class="square">
-      <li><a href="/speakers#thomas_macentee">Thomas MacEntee</a>, Ten Ways to Jumpstart Your Genealogy (Live presentation, Chapel)</li>
-      <li><%= CLASSES[0][1][0] %></li>
-      <li><%= CLASSES[0][2][0] %></li>
-      <li>1-on-1 Research & Translation Help (Room 4)</li>
-      <li>Family History Activities for Children (Primary Area)</li>
-      <li>Exhibits from Local Societies and Stake Organizations (Cultural Hall)</li>
+      <% CLASSES[0].each do |c| -%>
+        <% if c.size > 1 %>
+          <li><%= c[1].html_safe %></li>
+        <% else %>
+          <li><%= c[0] %></li>
+        <% end %>
+      <% end %>
+      <li>For Children: Story Time; Songs of our Ancestors; Thumbprint Family Tree (Primary Room)</li>
     </ul>
   </div>
 </div>
@@ -63,14 +65,14 @@
   <div class="small-12 large-12 columns">
     <h4>11:00am - Noon</h4>
     <ul class="square">
-      <li>Thomas MacEntee, Genealogy: The Future Is Now (Live presentation, Chapel)</li>
-      <li><a href="/speakers#janis_forte">Janis Forte</a>, African-American Research Techniques (Live presentation, RS Room)</li>
-      <li><a href="/speakers#julie_busse">Julie Busse</a>, Introduction to RootsMagic (Computer Lab, Family History Center)</li>
-      <li>Finding Missing People in Your Family Tree (video, Room 1)</li>
-      <li>Family History on the Go (video, Room 2)</li>
-      <li>1-on-1 Research & Translation Help (Room 4)</li>
-      <li>Family History Activities for Children (Primary Area)</li>
-      <li>Exhibits from Local Societies and Stake Organizations (Cultural Hall)</li>
+      <% CLASSES[1].each do |c| -%>
+        <% if c.size > 1 %>
+          <li><%= c[1].html_safe %></li>
+        <% else %>
+          <li><%= c[0] %></li>
+        <% end %>
+      <% end %>
+      <li>For Children: Photo Booth; Family Recipes; Songs of our Ancestors (Primary Room)</li>
     </ul>
   </div>
 </div>
@@ -88,14 +90,14 @@
   <div class="small-12 large-12 columns">
     <h4>1:15pm - 2:15pm</h4>
     <ul class="square">
-      <li>Thomas McEntee, Genealogy: Do-Over: A Year of Learning from Mistakes (Live presentation, Chapel)</li>
-      <li><a href="/speakers#justyna_cwynar">Justyna Cwynar</a>, Online Resources for Polish Research (Live presentation, RS Room)</li>
-      <li><a href="/speakers#amanda_jensen">Amanda Jensen</a>, Introduction to FamilySearch (Computer Lab, Family History Center)</li>
-      <li>From Tree to Temple: Preparing Family Names for the Temple (video, Room 1)</li>
-      <li>Getting Started in Genetic Genealogy (video, Room 2)</li>
-      <li>1-on-1 Research & Translation Help (Room 4)</li>
-      <li>Family History Activities for Children (Primary Area)</li>
-      <li>Exhibits from Local Societies and Stake Organizations (Cultural Hall)</li>
+      <% CLASSES[2].each do |c| -%>
+        <% if c.size > 1 %>
+          <li><%= c[1].html_safe %></li>
+        <% else %>
+          <li><%= c[0] %></li>
+        <% end %>
+      <% end %>
+      <li>For Children: Songs of our Ancestors; Thumbprint Family Tree (Primary Room)</li>
     </ul>
   </div>
 </div>
@@ -104,14 +106,13 @@
   <div class="small-12 large-12 columns">
     <h4>2:30pm - 3:30pm</h4>
     <ul class="square">
-      <li>Thomas MacEntee, You Use WHAT for Genealogy?: Wonderful Uses for Unusual Tools (Live presentation, Chapel)</li>
-      <li><a href="/speakers#donna_roginski">Donna Roginski</a>, Online Census Tips and Secrets (Live presentation, RS Room)</li>
-      <li><a href="/speakers#jeremy_foote">Jeremy Foote</a>, The Power of Online Genealogy Collaboration (Computer Lab, Family History Center)</li>
-      <li>FamilySearch & Beyond: New Resources for Members (video, Room 1)</li>
-      <li>FamilySearch Indexing: It's a Whole New World! (video, Room 2)</li>
-      <li>1-on-1 Research & Translation Help (Room 4)</li>
-      <li>Family History Activities for Children (Primary Area)</li>
-      <li>Exhibits from Local Societies and Stake Organizations (Cultural Hall)</li>
+      <% CLASSES[3].each do |c| -%>
+        <% if c.size > 1 %>
+          <li><%= c[1].html_safe %></li>
+        <% else %>
+          <li><%= c[0] %></li>
+        <% end %>
+      <% end %>
     </ul>
   </div>
 </div>
@@ -120,10 +121,13 @@
   <div class="small-12 large-12 columns">
     <h4>3:45pm - 4:45pm</h4>
     <ul class="square">
-      <li>Branching Out: Useful Tools to Help You Find More Names (video, Room 1)</li>
-      <li>What's New at FamilySearch (video, Room 2)</li>
-      <li>1-on-1 Research & Translation Help (Room 4)</li>
-      <li>Exhibits from Local Societies and Stake Organizations (Cultural Hall)</li>
+      <% CLASSES[4].each do |c| -%>
+        <% if c.size > 1 %>
+          <li><%= c[1].html_safe %></li>
+        <% else %>
+          <li><%= c[0] %></li>
+        <% end %>
+      <% end %>
     </ul>
   </div>
 </div>
