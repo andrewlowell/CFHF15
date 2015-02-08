@@ -1,6 +1,6 @@
   CLASSES = [
               [
-               ["Ten Ways to Jumpstart Your Genealogy (Thomas McEntee - Chapel)", "10 Ways to Jumpstart Your Genealogy (<a href=\"/speakers#thomas_macentee\">Thomas MacEntee</a> - Chapel)"],
+               ["Ten Ways to Jumpstart Your Genealogy (Thomas MacEntee - Chapel)", "10 Ways to Jumpstart Your Genealogy (<a href=\"/speakers#thomas_macentee\">Thomas MacEntee</a> - Chapel)"],
                ["Introduction to FamilySearch (Español - Bruce Anderson - Family History Center)", "Introduction to FamilySearch (Español - <a href=\"/speakers#bruce_susan\">Bruce Anderson</a> - Family History Center)"],
                ["Find Names & Strengthen Family with the My Family Booklet (Video - Room 1)"],
                ["Getting the Most Out of Ancestry.com (Video - Room 3)"],
@@ -9,7 +9,7 @@
               ],
               
               [
-                ["Genealogy: The Future Is Now (Thomas McEntee - Chapel)"],
+                ["Genealogy: The Future Is Now (Thomas MacEntee - Chapel)"],
                 ["African-American Research Techniques (Janis Forte - Relief Society Room)", "African-American Research Techniques (<a href=\"/speakers#janis_forte\">Janis Forte</a> - Relief Society Room)"], 
                 ["Hints and Sources in FamilyTree (Susan Anderson - Family History Center)", "Hints and Sources in FamilyTree (<a href=\"/speakers#bruce_susan\">Susan Anderson</a> - Family History Center)"],
                 ["Finding Missing People in Your Family Tree (Video - Room 1)"],
@@ -28,7 +28,7 @@
               ],
               
               [
-                ["You Use WHAT for Genealogy? Wonderful Uses for Unusual Tools (Thomas McEntee - Chapel)"],
+                ["You Use WHAT for Genealogy? Wonderful Uses for Unusual Tools (Thomas MacEntee - Chapel)"],
                 ["Online Census Tips and Secrets (Donna Roginski - Relief Society Room)", "Online Census Tips and Secrets (<a href=\"/speakers#donna_roginski\">Donna Roginski</a> - Relief Society Room)"],
                 ["RootsMagic: Sourcing, Adding Media, & Linking to FamilySearch (Julie Busse - Family History Center)", "RootsMagic: Sourcing, Adding Media, & Linking to FamilySearch (<a href=\"/speakers#julie_busse\">Julie Busse</a> - Family History Center)"],
                 ["FamilySearch & Beyond: New Resources for Members (Video - Room 1)"],
