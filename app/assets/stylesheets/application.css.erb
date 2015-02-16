@@ -102,41 +102,42 @@ iframe {
 /*** FOOTER ***/
   /***    ***/
 
+
+html, body {
+  height: 100%;
+  margin: 0; padding: 0;  /* to avoid scrollbars */
+}
+
+#wrapper {
+  display: flex;  /* use the flex model */
+  min-height: 100%;
+  flex-direction: column;  /* learn more: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+}
+
+#header {
+
+}
+
+#body {
+  flex: 1;
+}
+
+#footer{
+  width: 100%;
+  background-color: #b61e12;
+  color: white;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+
+/*
+
 * {
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-  margin: 0; padding: 0;
-}
-
-.footer {
-  width: 100%;
-  background-color: #b61e12;
-  color: white;
-}
-
-.footer h5 {
-  /*color: white;*/
-}
-
-footer.row {
-  padding: 12px 12px 0px 12px;
-}
-
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -7em;
-}
-    
-.footer, .push {
-  height: 7em;
-}
-
-
+*/
 
 
 

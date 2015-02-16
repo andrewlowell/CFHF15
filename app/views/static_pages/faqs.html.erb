@@ -1,4 +1,4 @@
-<nav class="top-bar" data-topbar role="navigation">
+<nav class="top-bar" data-topbar role="navigation" id="header">
   <ul class="title-area">
     <li class="name"><h1><%= link_to "Chicago Family History Fair", root_path %></h1></li>
   </ul>
@@ -17,57 +17,59 @@
   </section>
 </nav>
 
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h2 class="extended-vertical-padding">Frequently Asked Questions</h2>
-          
-      <h4>1. Can I attend for just part of the day?</h4>
-      <ul class="square"><li><strong>Absolutely!</strong> Join us for the whole day or just stop by for the workshops that interest you. Please register even if you only plan to attend for a short time.</li></ul>
-
-      <h4>2. How will lunch work?</h4>
-      <ul class="square">
-        <li>The Fair schedule includes a lunch break from noon until 1:15 pm. We won't be offering lunch onsite. Instead, there's a nice variety of local dining options right nearby. These include:</li>
-        
-        <ul>
-          <li>Located in Edens Plaza, at the northwest corner of Lake Avenue & Skokie Boulevard, 1 mile west of the Fair location</li>
-          <ul>
-            <li>Corner Bakery</li>
-            <li>Panda Express</li>
-            <li>Five Guys</li>
-          </ul>
-        </ul>
-        
-        <ul>
-          <li>Located in Westlake Plaza, at the southwest corner of Lake Avenue & Skokie Boulevard, 1 mile west of the Fair</li>
-          <ul>
-            <li>Akai Hana (Japanese restaurant, serving sushi)</li>
-            <li>Lou Malnati's Pizza (takeout only)</li>
-            <li>Irving's for Red Hot Lovers (hot dogs)</li>
-          </ul>
-        </ul>
-        
-        <ul>
-          <li>Located on Skokie Boulevard & Old Glenview Road, 1.7 miles southwest of the Fair</li>
-          <ul>
-            <li>Baker's Square (All-day American eats & baked goods)</li>
-          </ul>
-        </ul>
-        
-        <ul>
-          <li>Located at the southwest corner of Lake Avenue & Ridge Road, 1 mile east of the Fair</li>
-          <ul>
-            <li>Ridgeview Grill (Casual American eatery)</li>
-          </ul>
-        </ul>
-        
-      </ul>
-
-      <h4>3. Will I have a chance to get help with my own research?</h4>
-      <ul class="square"><li><strong>Definitely.</strong> This year we've set aside dedicated rooms next to the FHC for 1-on-1 consultations with local volunteer researchers. You'll be able to ask research questions and get translation help for Polish or German documents. When you register, select "1-on-1 Help" as your class choice during the class period most convenient for you. When you arrive at the fair and check in, you'll have a chance to sign up for a particular 20-minute time slot during the class period you chose.<br /><br /> The FHC itself will be in use during the morning and early afternoon sessions of the Fair for computer lab presentations. Microfilm readers & printers will be available throughout the day. From 3:45-5pm, the FHC will be open extended hours for online research and personalized research assistance.</li></ul>
-                  
-      <h4>4. Where will the fair be held?</h4>
-      <ul class="square"><li>The fair will take place at the Wilmette Illinois Stake Center which is located at 2727 Lake Avenue (the corner of Lake Avenue and Locust Avenue) in Wilmette, Illinois. It's easily accessible from the Edens Expressway and parking is available for free in the lot beside the building.</li></ul>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11845.643789529337!2d-87.74428228909353!3d42.07724394087138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc5a3c3de8911%3A0x3797c8fb62940049!2s2727+Lake+Ave%2C+Wilmette%2C+IL+60091!5e0!3m2!1sen!2sus!4v1422908916664" width="900" height="500" frameborder="0" style="border:0"></iframe>
+<div id="body">
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <h2 class="extended-vertical-padding">Frequently Asked Questions</h2>
+            
+        <h4>1. Can I attend for just part of the day?</h4>
+        <ul class="square"><li><strong>Absolutely!</strong> Join us for the whole day or just stop by for the workshops that interest you. Please register even if you only plan to attend for a short time.</li></ul>
   
+        <h4>2. How will lunch work?</h4>
+        <ul class="square">
+          <li>The Fair schedule includes a lunch break from noon until 1:15 pm. We won't be offering lunch onsite. Instead, there's a nice variety of local dining options right nearby. These include:</li>
+          
+          <ul>
+            <li>Located in Edens Plaza, at the northwest corner of Lake Avenue & Skokie Boulevard, 1 mile west of the Fair location</li>
+            <ul>
+              <li>Corner Bakery</li>
+              <li>Panda Express</li>
+              <li>Five Guys</li>
+            </ul>
+          </ul>
+          
+          <ul>
+            <li>Located in Westlake Plaza, at the southwest corner of Lake Avenue & Skokie Boulevard, 1 mile west of the Fair</li>
+            <ul>
+              <li>Akai Hana (Japanese restaurant, serving sushi)</li>
+              <li>Lou Malnati's Pizza (takeout only)</li>
+              <li>Irving's for Red Hot Lovers (hot dogs)</li>
+            </ul>
+          </ul>
+          
+          <ul>
+            <li>Located on Skokie Boulevard & Old Glenview Road, 1.7 miles southwest of the Fair</li>
+            <ul>
+              <li>Baker's Square (All-day American eats & baked goods)</li>
+            </ul>
+          </ul>
+          
+          <ul>
+            <li>Located at the southwest corner of Lake Avenue & Ridge Road, 1 mile east of the Fair</li>
+            <ul>
+              <li>Ridgeview Grill (Casual American eatery)</li>
+            </ul>
+          </ul>
+          
+        </ul>
+  
+        <h4>3. Will I have a chance to get help with my own research?</h4>
+        <ul class="square"><li><strong>Definitely.</strong> This year we've set aside dedicated rooms next to the FHC for 1-on-1 consultations with local volunteer researchers. You'll be able to ask research questions and get translation help for Polish or German documents. When you register, select "1-on-1 Help" as your class choice during the class period most convenient for you. When you arrive at the fair and check in, you'll have a chance to sign up for a particular 20-minute time slot during the class period you chose.<br /><br /> The FHC itself will be in use during the morning and early afternoon sessions of the Fair for computer lab presentations. Microfilm readers & printers will be available throughout the day. From 3:45-5pm, the FHC will be open extended hours for online research and personalized research assistance.</li></ul>
+                    
+        <h4>4. Where will the fair be held?</h4>
+        <ul class="square"><li>The fair will take place at the Wilmette Illinois Stake Center which is located at 2727 Lake Avenue (the corner of Lake Avenue and Locust Avenue) in Wilmette, Illinois. It's easily accessible from the Edens Expressway and parking is available for free in the lot beside the building.</li></ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11845.643789529337!2d-87.74428228909353!3d42.07724394087138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc5a3c3de8911%3A0x3797c8fb62940049!2s2727+Lake+Ave%2C+Wilmette%2C+IL+60091!5e0!3m2!1sen!2sus!4v1422908916664" width="900" height="500" frameborder="0" style="border:0"></iframe>
+    
+    </div>
   </div>
 </div>

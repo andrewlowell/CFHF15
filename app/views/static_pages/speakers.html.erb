@@ -1,94 +1,96 @@
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name"><h1><%= link_to "Chicago Family History Fair", root_path %></h1></li>
-  </ul>
-  <section class="top-bar-section">
-    <ul class="left">
-      <li><%= link_to "Register", new_registrant_path, class: "alert button" %></li>
+  <nav class="top-bar" data-topbar role="navigation" id="header">
+    <ul class="title-area">
+      <li class="name"><h1><%= link_to "Chicago Family History Fair", root_path %></h1></li>
     </ul>
-    <ul class="right">
-      <li class="active"><%= link_to "Speakers", speakers_path %></li>
-      <li><%= link_to "Schedule", schedule_path %></li>
-      <li><%= link_to "Exhibits", exhibits_path %></li>
-      <li><%= link_to "Research Help", research_help_path %></li>
-      <li><%= link_to "FAQs", faqs_path %></li>
-      <li><%= link_to "Contact Us", contact_us_path %></li>
-    </ul>
-  </section>
-</nav>
-
-<div class="row extended-vertical-padding">
-  <div class="small-12 large-12 columns">
-    <h2>Speakers and Presenters</h2>
+    <section class="top-bar-section">
+      <ul class="left">
+        <li><%= link_to "Register", new_registrant_path, class: "alert button" %></li>
+      </ul>
+      <ul class="right">
+        <li class="active"><%= link_to "Speakers", speakers_path %></li>
+        <li><%= link_to "Schedule", schedule_path %></li>
+        <li><%= link_to "Exhibits", exhibits_path %></li>
+        <li><%= link_to "Research Help", research_help_path %></li>
+        <li><%= link_to "FAQs", faqs_path %></li>
+        <li><%= link_to "Contact Us", contact_us_path %></li>
+      </ul>
+    </section>
+  </nav>
+  
+<div id="body">
+  <div class="row extended-vertical-padding">
+    <div class="small-12 large-12 columns">
+      <h2>Speakers and Presenters</h2>
+    </div>
   </div>
-</div>
-
-<div class="row speaker-blurb">
-  <div class="large-3 medium-3 small-3 columns">
-    <a name="thomas_macentee"><%= image_tag "thomas_macentee.jpg" %></a>
+  
+  <div class="row speaker-blurb">
+    <div class="large-3 medium-3 small-3 columns">
+      <a name="thomas_macentee"><%= image_tag "thomas_macentee.jpg" %></a>
+    </div>
+    <div class="large-9 medium-9 small-9 columns">
+      <h4>Thomas MacEntee</h4>
+      <p>A genealogy professional who's also a blogger, educator, author, social media connector, marketer, network builder and more. Thomas is probably best known for creating the online community Geneabloggers, which brings together 3,000 individuals who share their family history experiences with others. He's also the founder of High Definition Genealogy and Hack Genealogy. He brings a fun and engaging style to genealogy education.</p>
+    </div>
   </div>
-  <div class="large-9 medium-9 small-9 columns">
-    <h4>Thomas MacEntee</h4>
-    <p>A genealogy professional who's also a blogger, educator, author, social media connector, marketer, network builder and more. Thomas is probably best known for creating the online community Geneabloggers, which brings together 3,000 individuals who share their family history experiences with others. He's also the founder of High Definition Genealogy and Hack Genealogy. He brings a fun and engaging style to genealogy education.</p>
+  
+  <div class="row speaker-blurb">
+    <div class="large-3 medium-3 small-3 columns">
+      <a name="janis_forte"><%= image_tag "janis_forte.jpg" %></a>
+    </div>
+    <div class="large-9 medium-9 small-9 columns">
+      <h4>Janis Forte</h4>
+      <p>Janis Minor Forte is an experienced genealogist, writer, and lecturer who has presented at national, state, and local genealogical conferences. Her presentation specialties include methodology, problem solving techniques, skill-building techniques, and case studies. She is also proficient in assisting in the identification of slave holders.</p>
+    </div>
   </div>
-</div>
-
-<div class="row speaker-blurb">
-  <div class="large-3 medium-3 small-3 columns">
-    <a name="janis_forte"><%= image_tag "janis_forte.jpg" %></a>
+  
+  <div class="row speaker-blurb">
+    <div class="large-3 medium-3 small-3 columns">
+      <a name="donna_roginski"><%= image_tag "donna_roginski.jpg" %></a>
+    </div>
+    <div class="large-9 medium-9 small-9 columns">
+      <h4>Donna Roginski</h4>
+      <p>Donna Roginski has a Master of Liberal Arts in Library Science from Northern Illinois University. Now retired, she has been a librarian in school libraries, public libraries, and hospital medical libraries. She is a family history center volunteer and passionate genealogy researcher.</p>
+    </div>
   </div>
-  <div class="large-9 medium-9 small-9 columns">
-    <h4>Janis Forte</h4>
-    <p>Janis Minor Forte is an experienced genealogist, writer, and lecturer who has presented at national, state, and local genealogical conferences. Her presentation specialties include methodology, problem solving techniques, skill-building techniques, and case studies. She is also proficient in assisting in the identification of slave holders.</p>
+  
+  <div class="row speaker-blurb">
+    <div class="large-3 medium-3 small-3 columns">
+      <a name="justyna_cwynar"><%= image_tag "justyna_cwynar.jpg" %></a>
+    </div>
+    <div class="large-9 medium-9 small-9 columns">
+      <h4>Justyna Cwynar</h4>
+      <p>Justyna Cwynar is a long-time regular visitor to our family history center and an experienced Polish researcher.</p>
+    </div>
   </div>
-</div>
-
-<div class="row speaker-blurb">
-  <div class="large-3 medium-3 small-3 columns">
-    <a name="donna_roginski"><%= image_tag "donna_roginski.jpg" %></a>
+  
+  <div class="row speaker-blurb">
+    <div class="large-3 medium-3 small-3 columns">
+      <a name="julie_busse"><%= image_tag "julie_busse.jpg" %></a>
+    </div>
+    <div class="large-9 medium-9 small-9 columns">
+      <h4>Julie Busse</h4>
+      <p>Julie has been a genealogist for roughly 40 years. She has extensive experience with RootsMagic and its predecessors, and has served as a volunteer in several Family History Centers.</p>
+    </div>
   </div>
-  <div class="large-9 medium-9 small-9 columns">
-    <h4>Donna Roginski</h4>
-    <p>Donna Roginski has a Master of Liberal Arts in Library Science from Northern Illinois University. Now retired, she has been a librarian in school libraries, public libraries, and hospital medical libraries. She is a family history center volunteer and passionate genealogy researcher.</p>
+  
+  <div class="row speaker-blurb">
+    <div class="large-3 medium-3 small-3 columns">
+      <a name="amanda_jensen"><%= image_tag "amanda_jensen.jpg" %></a>
+    </div>
+    <div class="large-9 medium-9 small-9 columns">
+      <h4>Amanda Jensen</h4>
+      <p>Amanda Jensen is a Masters student at Loyola University Chicago studying Digital Humanities, specializing in developing genealogical apps. She also owns Roots4All Genealogy Services and has a BA in Family History-Genealogy from BYU where she studied American, British, Canadian, and Slovak family history techniques. She has been researching personally and professionally for 16 years.</p>
+    </div>
   </div>
-</div>
-
-<div class="row speaker-blurb">
-  <div class="large-3 medium-3 small-3 columns">
-    <a name="justyna_cwynar"><%= image_tag "justyna_cwynar.jpg" %></a>
-  </div>
-  <div class="large-9 medium-9 small-9 columns">
-    <h4>Justyna Cwynar</h4>
-    <p>Justyna Cwynar is a long-time regular visitor to our family history center and an experienced Polish researcher.</p>
-  </div>
-</div>
-
-<div class="row speaker-blurb">
-  <div class="large-3 medium-3 small-3 columns">
-    <a name="julie_busse"><%= image_tag "julie_busse.jpg" %></a>
-  </div>
-  <div class="large-9 medium-9 small-9 columns">
-    <h4>Julie Busse</h4>
-    <p>Julie has been a genealogist for roughly 40 years. She has extensive experience with RootsMagic and its predecessors, and has served as a volunteer in several Family History Centers.</p>
-  </div>
-</div>
-
-<div class="row speaker-blurb">
-  <div class="large-3 medium-3 small-3 columns">
-    <a name="amanda_jensen"><%= image_tag "amanda_jensen.jpg" %></a>
-  </div>
-  <div class="large-9 medium-9 small-9 columns">
-    <h4>Amanda Jensen</h4>
-    <p>Amanda Jensen is a Masters student at Loyola University Chicago studying Digital Humanities, specializing in developing genealogical apps. She also owns Roots4All Genealogy Services and has a BA in Family History-Genealogy from BYU where she studied American, British, Canadian, and Slovak family history techniques. She has been researching personally and professionally for 16 years.</p>
-  </div>
-</div>
-
-<div class="row speaker-blurb">
-  <div class="large-3 medium-3 small-3 columns">
-    <a name="bruce_susan"><%= image_tag "bruce_susan.jpg" %></a>
-  </div>
-  <div class="large-9 medium-9 small-9 columns">
-    <h4>Bruce and Susan Anderson</h4>
-    <p>Bruce and Susan Anderson serve as Area Family History Advisers for The Church of Jesus Christ of Latter-day Saints in the North America Central Area.  Susan, a lifelong genealogist, has also served for four years as a telephone customer support agent for FamilySearch.org and a trainer for others who provide telephone support for the program.  Bruce also serves as the director of the Normal IL Family History Center. </p>
+  
+  <div class="row speaker-blurb">
+    <div class="large-3 medium-3 small-3 columns">
+      <a name="bruce_susan"><%= image_tag "bruce_susan.jpg" %></a>
+    </div>
+    <div class="large-9 medium-9 small-9 columns">
+      <h4>Bruce and Susan Anderson</h4>
+      <p>Bruce and Susan Anderson serve as Area Family History Advisers for The Church of Jesus Christ of Latter-day Saints in the North America Central Area.  Susan, a lifelong genealogist, has also served for four years as a telephone customer support agent for FamilySearch.org and a trainer for others who provide telephone support for the program.  Bruce also serves as the director of the Normal IL Family History Center. </p>
+    </div>
   </div>
 </div>

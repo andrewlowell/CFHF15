@@ -1,4 +1,4 @@
-<nav class="top-bar" data-topbar role="navigation">
+<nav class="top-bar" data-topbar role="navigation" id="header">
   <ul class="title-area">
     <li class="name"><h1><%= link_to "Chicago Family History Fair", root_path %></h1></li>
   </ul>
@@ -17,117 +17,119 @@
   </section>
 </nav>
 
-<div class="row extended-vertical-padding">
-  <div class="small-12 large-12 columns">
-    <h2>Schedule of Presentations and Activities</h2>
-    <%= link_to 'Download PDF', pdf_download_pdf_url, class: "button round" %>
+<div id="body">
+  <div class="row extended-vertical-padding">
+    <div class="small-12 large-12 columns">
+      <h2>Schedule of Presentations and Activities</h2>
+      <%= link_to 'Download PDF', pdf_download_pdf_url, class: "button round" %>
+    </div>
   </div>
-</div>
-
-
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h4>8:00am - 8:30am</h4>
-    <ul class="square">
-      <li>Check In</li>
-      <li>Continental Breakfast</li>
-    </ul>
+  
+  
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <h4>8:00am - 8:30am</h4>
+      <ul class="square">
+        <li>Check In</li>
+        <li>Continental Breakfast</li>
+      </ul>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h4>8:30am - 9:30am</h4>
-    <ul class="square">
-      <li>Welcome</li>
-      <li>RootsTech Keynote Presentations</li>
-    </ul>
+  
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <h4>8:30am - 9:30am</h4>
+      <ul class="square">
+        <li>Welcome</li>
+        <li>RootsTech Keynote Presentations</li>
+      </ul>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h4>9:45am - 10:45am</h4>
-    <ul class="square">
-      <% CLASSES[0].each do |c| -%>
-        <% if c.size > 1 %>
-          <li><%= c[1].html_safe %></li>
-        <% else %>
-          <li><%= c[0] %></li>
+  
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <h4>9:45am - 10:45am</h4>
+      <ul class="square">
+        <% CLASSES[0].each do |c| -%>
+          <% if c.size > 1 %>
+            <li><%= c[1].html_safe %></li>
+          <% else %>
+            <li><%= c[0] %></li>
+          <% end %>
         <% end %>
-      <% end %>
-      <li>For Children: Story Time; Songs of our Ancestors; Thumbprint Family Tree (Primary Room)</li>
-    </ul>
+        <li>For Children: Story Time; Songs of our Ancestors; Thumbprint Family Tree (Primary Room)</li>
+      </ul>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h4>11:00am - Noon</h4>
-    <ul class="square">
-      <% CLASSES[1].each do |c| -%>
-        <% if c.size > 1 %>
-          <li><%= c[1].html_safe %></li>
-        <% else %>
-          <li><%= c[0] %></li>
+  
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <h4>11:00am - Noon</h4>
+      <ul class="square">
+        <% CLASSES[1].each do |c| -%>
+          <% if c.size > 1 %>
+            <li><%= c[1].html_safe %></li>
+          <% else %>
+            <li><%= c[0] %></li>
+          <% end %>
         <% end %>
-      <% end %>
-      <li>For Children: Photo Booth; Family Recipes; Songs of our Ancestors (Primary Room)</li>
-    </ul>
+        <li>For Children: Photo Booth; Family Recipes; Songs of our Ancestors (Primary Room)</li>
+      </ul>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h4>Noon - 1:15pm</h4>
-    <ul class="square">
-      <li>Lunch (on your own; see our [list of nearby restaurants])</li>
-    </ul>
+  
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <h4>Noon - 1:15pm</h4>
+      <ul class="square">
+        <li>Lunch (on your own; see our [list of nearby restaurants])</li>
+      </ul>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h4>1:15pm - 2:15pm</h4>
-    <ul class="square">
-      <% CLASSES[2].each do |c| -%>
-        <% if c.size > 1 %>
-          <li><%= c[1].html_safe %></li>
-        <% else %>
-          <li><%= c[0] %></li>
+  
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <h4>1:15pm - 2:15pm</h4>
+      <ul class="square">
+        <% CLASSES[2].each do |c| -%>
+          <% if c.size > 1 %>
+            <li><%= c[1].html_safe %></li>
+          <% else %>
+            <li><%= c[0] %></li>
+          <% end %>
         <% end %>
-      <% end %>
-      <li>For Children: Songs of our Ancestors; Thumbprint Family Tree (Primary Room)</li>
-    </ul>
+        <li>For Children: Songs of our Ancestors; Thumbprint Family Tree (Primary Room)</li>
+      </ul>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h4>2:30pm - 3:30pm</h4>
-    <ul class="square">
-      <% CLASSES[3].each do |c| -%>
-        <% if c.size > 1 %>
-          <li><%= c[1].html_safe %></li>
-        <% else %>
-          <li><%= c[0] %></li>
+  
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <h4>2:30pm - 3:30pm</h4>
+      <ul class="square">
+        <% CLASSES[3].each do |c| -%>
+          <% if c.size > 1 %>
+            <li><%= c[1].html_safe %></li>
+          <% else %>
+            <li><%= c[0] %></li>
+          <% end %>
         <% end %>
-      <% end %>
-    </ul>
+      </ul>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h4>3:45pm - 4:45pm</h4>
-    <ul class="square">
-      <% CLASSES[4].each do |c| -%>
-        <% if c.size > 1 %>
-          <li><%= c[1].html_safe %></li>
-        <% else %>
-          <li><%= c[0] %></li>
+  
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <h4>3:45pm - 4:45pm</h4>
+      <ul class="square">
+        <% CLASSES[4].each do |c| -%>
+          <% if c.size > 1 %>
+            <li><%= c[1].html_safe %></li>
+          <% else %>
+            <li><%= c[0] %></li>
+          <% end %>
         <% end %>
-      <% end %>
-    </ul>
+      </ul>
+    </div>
   </div>
 </div>

@@ -17,10 +17,9 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <div id="wrapper">
       <%= yield %>
-      <div class="push"></div>
+      <%= render 'layouts/footer' %>
     </div>
-    <%= render 'layouts/footer' %>
   </body>
 </html>
