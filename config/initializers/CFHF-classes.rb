@@ -31,7 +31,7 @@
               [
                 ["You Use WHAT for Genealogy? Wonderful Uses for Unusual Tools (Thomas MacEntee - Chapel)"],
                 ["Online Census Tips and Secrets (Donna Roginski - Relief Society Room)", "Online Census Tips and Secrets (<a href=\"/speakers#donna_roginski\">Donna Roginski</a> - Relief Society Room)"],
-                ["RootsMagic: Sourcing, Adding Media, & Linking to FamilySearch (Julie Busse - Family History Center)", "RootsMagic: Sourcing, Adding Media, & Linking to FamilySearch (<a href=\"/speakers#julie_busse\">Julie Busse</a> - Family History Center)"],
+                ["RootsMagic: Sourcing, Adding Media, & Linking to FamilySearch (Julie Busse - Family History Center)"],
                 ["FamilySearch & Beyond: New Resources for Members (Video - Room 1)"],
                 ["FamilySearch y mas alla: Nuevos recursos para miembros (Video - Room 2)"],
                 ["FamilySearch Indexing: It's a Whole New World! (Video - Room 3)"],
