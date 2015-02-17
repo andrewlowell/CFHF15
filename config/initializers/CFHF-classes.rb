@@ -41,7 +41,7 @@
               [
                 ["Branching Out: Useful Tools to Help You Find More Names (Video - Room 1)"],
                 ["Diversifique su busqueda: Herramientas utiles para ayudarles a encontrar mas nombres (Video - Room 2)"],
-                ["What's New at FamilySearch (Video - Room 3)"],
+                ["Building a Genealogy Research Toolbox (Video - Room 3)"],
                 ["1-on-1 Research Help (Room 4)"]
               ]
               
