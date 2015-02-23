@@ -39,7 +39,7 @@
 
       <div class="row">
         <div class="large-12 medium-12 small-12 columns">
-          <%= label_tag("Second Session: 11:00am - 6:00pm") %>
+          <%= label_tag("Second Session: 11:00am - 12:00pm") %>
           <%= f.select(:time_slot_2) do %>
             <% CLASSES[1].each do |c| -%>
               <% if c.first == @registrant.time_slot_2 %>
