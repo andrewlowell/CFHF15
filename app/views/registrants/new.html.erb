@@ -50,13 +50,17 @@
       <div class="row">
         <div class="large-12 medium-12 small-12 columns">
           <%= label_tag("First Session: 9:45am - 10:45am") %>
-          <%= f.select(:time_slot_1, {prompt: 'Select Person'}) do %>
+          <%= f.select(:time_slot_1) do %>
             <option value="None">Please select a class...</option>
             <% CLASSES[0].each do |c| -%>
               <% if c.first == @registrant.time_slot_1 %>
                 <%= content_tag(:option, c.first, value: c.first, selected: "") %>
               <% else %>
-                <%= content_tag(:option, c.first, value: c.first) %>
+                <% if c.first == "1-on-1 Research Help (Room 4)" %>
+                  <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% else %>
+                  <%= content_tag(:option, c.first, value: c.first) %>
+                <% end%>
               <% end %>
             <% end %>
             <%= content_tag(:option, "None", value: "None") %>
@@ -73,7 +77,11 @@
               <% if c.first == @registrant.time_slot_2 %>
                 <%= content_tag(:option, c.first, value: c.first, selected: "") %>
               <% else %>
-                <%= content_tag(:option, c.first, value: c.first) %>
+                <% if c.first == "1-on-1 Research Help (Room 4)" %>
+                  <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% else %>
+                  <%= content_tag(:option, c.first, value: c.first) %>
+                <% end%>
               <% end %>
             <% end %>
             <%= content_tag(:option, "None", value: "None") %>
@@ -90,7 +98,11 @@
               <% if c.first == @registrant.time_slot_3 %>
                 <%= content_tag(:option, c.first, value: c.first, selected: "") %>
               <% else %>
-                <%= content_tag(:option, c.first, value: c.first) %>
+                <% if c.first == "1-on-1 Research Help (Room 4)" %>
+                  <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% else %>
+                  <%= content_tag(:option, c.first, value: c.first) %>
+                <% end%>
               <% end %>
             <% end %>
             <%= content_tag(:option, "None", value: "None") %>
@@ -107,7 +119,11 @@
               <% if c.first == @registrant.time_slot_4 %>
                 <%= content_tag(:option, c.first, value: c.first, selected: "") %>
               <% else %>
-                <%= content_tag(:option, c.first, value: c.first) %>
+                <% if c.first == "1-on-1 Research Help (Room 4)" %>
+                  <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% else %>
+                  <%= content_tag(:option, c.first, value: c.first) %>
+                <% end%>
               <% end %>
             <% end %>
             <%= content_tag(:option, "None", value: "None") %>
