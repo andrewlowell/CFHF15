@@ -121,6 +121,8 @@
               <% else %>
                 <% if c.first == "1-on-1 Research Help (Room 4)" %>
                   <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% elsif c.first == "RootsMagic: Sourcing, Adding Media, & Linking to FamilySearch (Julie Busse - Family History Center)" %>
+                  <%= content_tag(:option, "RootsMagic: Sourcing, Adding Media, & Linking to FamilySearch is full.", value: c.first, disabled: true) %>  
                 <% else %>
                   <%= content_tag(:option, c.first, value: c.first) %>
                 <% end%>
