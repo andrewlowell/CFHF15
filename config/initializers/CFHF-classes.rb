@@ -1,7 +1,7 @@
   CLASSES = [
               [
                ["Ten Ways to Jumpstart Your Genealogy (Thomas MacEntee - Chapel)", "10 Ways to Jumpstart Your Genealogy (<a href=\"/speakers#thomas_macentee\">Thomas MacEntee</a> - Chapel)"],
-               ["Introduction to FamilySearch (Español - Bruce Anderson - Family History Center)", "Introduction to FamilySearch (Español - <a href=\"/speakers#bruce_susan\">Bruce Anderson</a> - Family History Center)"],
+               #["Introduction to FamilySearch (Español - Bruce Anderson - Family History Center)", "Introduction to FamilySearch (Español - <a href=\"/speakers#bruce_susan\">Bruce Anderson</a> - Family History Center)"],
                ["Find Names & Strengthen Family with the My Family Booklet (Video - Room 1)"],
                ["Encuentre nombres y fortalezca a su familia con el folleto de Mi Familia (Video - Room 2)"],
                ["Getting the Most Out of Ancestry.com (Video - Room 3)"],

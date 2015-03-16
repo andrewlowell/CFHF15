@@ -83,6 +83,8 @@
                   <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
                 <% elsif c.first == "Finding Missing People in Your Family Tree (Video - Room 1)" %>
                   <%= content_tag(:option, "Finding Missing People in Your Family Tree is full for this session.", value: c.first, disabled: true) %>
+                <% elsif c.first == "Hints and Sources in FamilyTree (Susan Anderson - Family History Center)" %>
+                  <%= content_tag(:option, "Hints and Sources in FamilyTree is full for this session.", value: c.first, disabled: true) %>
                 <% else %>
                   <%= content_tag(:option, c.first, value: c.first) %>
                 <% end%>
