@@ -31,6 +31,8 @@
               <% else %>
                 <% if c.first == "1-on-1 Research Help (Room 4)" %>
                   <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% elsif c.first == "Getting the Most Out of Ancestry.com (Video - Room 3)" %>
+                  <%= content_tag(:option, "Getting the Most Out of Ancestry.com is full for this session.", value: c.first, disabled: true) %>
                 <% else %>
                   <%= content_tag(:option, c.first, value: c.first) %>
                 <% end%>
@@ -51,6 +53,10 @@
               <% else %>
                 <% if c.first == "1-on-1 Research Help (Room 4)" %>
                   <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% elsif c.first == "Finding Missing People in Your Family Tree (Video - Room 1)" %>
+                  <%= content_tag(:option, "Finding Missing People in Your Family Tree is full for this session.", value: c.first, disabled: true) %>
+                <% elsif c.first == "Hints and Sources in FamilyTree (Susan Anderson - Family History Center)" %>
+                  <%= content_tag(:option, "Hints and Sources in FamilyTree is full for this session.", value: c.first, disabled: true) %>
                 <% else %>
                   <%= content_tag(:option, c.first, value: c.first) %>
                 <% end%>
@@ -71,6 +77,8 @@
               <% else %>
                 <% if c.first == "1-on-1 Research Help (Room 4)" %>
                   <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% elsif c.first == "Getting Started with RootsMagic Genealogy Software (Julie Busse - Family History Center)" %>
+                  <%= content_tag(:option, "Getting Started with RootsMagic Genealogy Software is full for this session.", value: c.first, disabled: true) %>
                 <% else %>
                   <%= content_tag(:option, c.first, value: c.first) %>
                 <% end%>
@@ -91,6 +99,8 @@
               <% else %>
                 <% if c.first == "1-on-1 Research Help (Room 4)" %>
                   <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% elsif c.first == "RootsMagic: Sourcing, Adding Media, & Linking to FamilySearch (Julie Busse - Family History Center)" %>
+                  <%= content_tag(:option, "RootsMagic: Sourcing, Adding Media, & Linking to FamilySearch is full.", value: c.first, disabled: true) %>  
                 <% else %>
                   <%= content_tag(:option, c.first, value: c.first) %>
                 <% end%>
@@ -111,6 +121,8 @@
               <% else %>
                 <% if c.first == "1-on-1 Research Help (Room 4)" %>
                   <%= content_tag(:option, "1-on-1 Research Help is full for this session.", value: c.first, disabled: true) %>
+                <% elsif c.first == "Branching Out: Useful Tools to Help You Find More Names (Video - Room 1)" %>
+                  <%= content_tag(:option, "Branching Out: Useful Tools to Help You Find More Names is full for this session.", value: c.first, disabled: true) %>
                 <% else %>
                   <%= content_tag(:option, c.first, value: c.first) %>
                 <% end%>
