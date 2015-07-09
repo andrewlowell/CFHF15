@@ -5,7 +5,7 @@
                ["Find Names & Strengthen Family with the My Family Booklet (Video - Room 1)"],
                ["Encuentre nombres y fortalezca a su familia con el folleto de Mi Familia (Video - Room 2)"],
                ["Getting the Most Out of Ancestry.com (Video - Room 3)"],
-               ["1-on-1 Research Help (Room 4)"],
+               ["1-on-1 Research Help (Room 4)"]
               ],
               
               [
